@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>601</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>601</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>601</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Платные услуги</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>581</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="printButton">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Печать договора</string>
+       </property>
+       <property name="statusTip">
+        <string>Печать договора</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Печать</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>res/printer.png</normaloff>res/printer.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clearButton">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Очистить поля</string>
+       </property>
+       <property name="statusTip">
+        <string>Очистить поля</string>
+       </property>
+       <property name="text">
+        <string>Новый</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>res/document-new.png</normaloff>res/document-new.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exitButton">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Выйти из ПО Платные услуги</string>
+       </property>
+       <property name="statusTip">
+        <string>Выйти из ПО Платные услуги</string>
+       </property>
+       <property name="text">
+        <string>Выход</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>res/system-exit.png</normaloff>res/system-exit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>581</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_NumDogovor">
+       <property name="toolTip">
+        <string>№ договора</string>
+       </property>
+       <property name="statusTip">
+        <string>№ договора</string>
+       </property>
+       <property name="placeholderText">
+        <string>№ договора</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_PriceUsluga">
+       <property name="toolTip">
+        <string>Стоимость</string>
+       </property>
+       <property name="statusTip">
+        <string>Стоимость</string>
+       </property>
+       <property name="placeholderText">
+        <string>Стоимость</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_NumReceipt">
+       <property name="toolTip">
+        <string>№ квитанции</string>
+       </property>
+       <property name="statusTip">
+        <string>№ квитанции</string>
+       </property>
+       <property name="placeholderText">
+        <string>№ квитанции</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="toolTip">
+        <string>Дата договора</string>
+       </property>
+       <property name="statusTip">
+        <string>Дата договора</string>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="date">
+        <date>
+         <year>2020</year>
+         <month>1</month>
+         <day>1</day>
+        </date>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>581</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="lineEdit_Fio">
+       <property name="toolTip">
+        <string>Ф. И. О.</string>
+       </property>
+       <property name="statusTip">
+        <string>Ф. И. О.</string>
+       </property>
+       <property name="placeholderText">
+        <string>Ф. И. О.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_Documents">
+       <property name="toolTip">
+        <string>Документ</string>
+       </property>
+       <property name="statusTip">
+        <string>Документ</string>
+       </property>
+       <property name="currentText">
+        <string>Документ</string>
+       </property>
+       <property name="placeholderText">
+        <string>Документ</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Новый элемент</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Новый элемент 2</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_NumDoc">
+       <property name="toolTip">
+        <string>Серия и номер документа</string>
+       </property>
+       <property name="statusTip">
+        <string>Серия и номер документа</string>
+       </property>
+       <property name="whatsThis">
+        <string>Серия и номер документа</string>
+       </property>
+       <property name="placeholderText">
+        <string>Серия и номер документа</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_Address">
+       <property name="toolTip">
+        <string>Адрес</string>
+       </property>
+       <property name="statusTip">
+        <string>Адрес</string>
+       </property>
+       <property name="placeholderText">
+        <string>Адрес</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_Usluga">
+       <property name="toolTip">
+        <string>Услуга</string>
+       </property>
+       <property name="statusTip">
+        <string>Услуга</string>
+       </property>
+       <property name="currentText">
+        <string>Услуга</string>
+       </property>
+       <property name="placeholderText">
+        <string>Услуга</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>240</y>
+      <width>581</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>579</width>
+       <height>269</height>
+      </rect>
+     </property>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>581</width>
+        <height>271</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>601</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="menuExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Справочники</string>
+    </property>
+    <widget class="QMenu" name="menu_4">
+     <property name="title">
+      <string>Услуги</string>
+     </property>
+     <addaction name="menuLoadUslugi"/>
+    </widget>
+    <addaction name="menuDogovor"/>
+    <addaction name="menu_4"/>
+    <addaction name="menuDokuments"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>Отчеты</string>
+    </property>
+    <addaction name="menuJournal"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #474747;</string>
+   </property>
+  </widget>
+  <action name="menuExit">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Договора</string>
+   </property>
+  </action>
+  <action name="menuDogovor">
+   <property name="text">
+    <string>Договора</string>
+   </property>
+  </action>
+  <action name="menuDokuments">
+   <property name="text">
+    <string>Документы</string>
+   </property>
+  </action>
+  <action name="menuLoadUslugi">
+   <property name="text">
+    <string>Подгрузить услуги</string>
+   </property>
+  </action>
+  <action name="menuJournal">
+   <property name="text">
+    <string>Журнал</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_Fio</tabstop>
+  <tabstop>comboBox_Documents</tabstop>
+  <tabstop>lineEdit_NumDoc</tabstop>
+  <tabstop>lineEdit_Address</tabstop>
+  <tabstop>comboBox_Usluga</tabstop>
+  <tabstop>lineEdit_NumDogovor</tabstop>
+  <tabstop>lineEdit_PriceUsluga</tabstop>
+  <tabstop>lineEdit_NumReceipt</tabstop>
+  <tabstop>dateEdit</tabstop>
+  <tabstop>printButton</tabstop>
+  <tabstop>clearButton</tabstop>
+  <tabstop>exitButton</tabstop>
+  <tabstop>tableView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
